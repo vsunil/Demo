@@ -1,0 +1,19 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <title>Our Node</title>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+        <script src="javascripts/app.js" type="text/javascript"></script> <!-- not created yet -->
+    </head>
+    <body >
+        <div>
+            hELLO wORLD
+        </div>
+        <div ng-controller="MyController">
+			 <ul ng-repeat="item in data">
+				<li>Name: {{item.name}}, City: {{item.city}}</li>
+			</ul>
+        </div>
+    </body>
+</html>
